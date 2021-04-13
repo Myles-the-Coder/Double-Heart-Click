@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  overflow:hidden;
+  height: 100vh;
+}
+
+h2, h4 {
+  text-align: center;
+}
+
+i {
+  color: red;
+}
+
+body .container {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1616530187419-ef1ff77cc52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+  box-shadow: 6px 2px 45px -6px rgba(0,0,0,0.47);
+  cursor: pointer;
+}
+
+.container .bi-heart-fill {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%,-50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
